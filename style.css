@@ -15,7 +15,7 @@ header{
     top: 0;
     left: 0;
     width: 100%;
-    padding: 50px 7%;
+    padding: 60px 5%;
     display: flex;
     justify-content: space-between;
     align-items: center; 
@@ -37,14 +37,47 @@ header{
 .navbar a.active{
     color: #00abf0;
 }
+
+.menu{
+    margin-top: 10%;
+    padding-left: 5%;
+}
+
 .menu a{
     margin-top: 50px;
-    padding-left: 60px;
     display: block;
+    width: 2%;
 }
+
 .menu img{
-    width: 50px;
+    height: 50px;
 }
+
 .menu img:hover{
-    width: 60px;
+    height: 60px;
+}
+
+.intro{
+    background-color: #121C2E;
+    border-radius: 10px;
+    margin-left: 13%;
+    margin-right: 22%;
+    padding: 1.5% 3%;
+}
+
+.intro h1{
+    font-size: 45px;
+}
+
+.intro h3{
+    font-size: 30px;
+}
+
+.intro p{
+    font-size: 20px;
+    font-weight: 10;
+}
+
+.myname{
+    color: #00abf0;
 }
