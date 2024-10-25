@@ -1,9 +1,25 @@
-nav{
-    background-color: blue;
-    margin: 10px;
-    padding: 10px;
+*{
+    margin: 0;
+    padding: 0;
 }
-.navbar{
+body{
+    background-image: url("./BackgroundImg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container{
+    background-color: #0503136a;
+    height: 650px;
+    margin: 30px;
+    border-radius: 19px;
+    padding: 2cap;
+    box-shadow: 5px 5px 15px rgba(1, 56, 64, 0.5); /* Shadow with blur */
+    color: #fff;
+}
+
+.logo{
     text-decoration: none;
-    
+    color: aliceblue;
+    font-size: 30px;
 }
