@@ -1,25 +1,50 @@
 *{
     margin: 0;
     padding: 0;
-}
-body{
-    background-image: url("./BackgroundImg.png");
-    background-size: cover;
-    background-repeat: no-repeat;
+    box-sizing: border-box;
+    font-family: 'Poppins' ,sans-serif;
 }
 
-.container{
-    background-color: #0503136a;
-    height: 650px;
-    margin: 30px;
-    border-radius: 19px;
-    padding: 2cap;
-    box-shadow: 5px 5px 15px rgba(1, 56, 64, 0.5); /* Shadow with blur */
-    color: #fff;
+body{
+    background-color: #000000;
+    color: #ffffff;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 50px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
 }
 
 .logo{
+   
+}
+
+.navbar a{
+    font-size: 25px;
     text-decoration: none;
-    color: aliceblue;
-    font-size: 30px;
+    font-weight: 700;
+    margin-left: 70px;
+    color: #ffffff;
+}
+
+.navbar a:hover ,
+.navbar a.active{
+    color: #00abf0;
+}
+.menu a{
+    margin-top: 50px;
+    padding-left: 60px;
+    display: block;
+}
+.menu img{
+    width: 50px;
+}
+.menu img:hover{
+    width: 60px;
 }
