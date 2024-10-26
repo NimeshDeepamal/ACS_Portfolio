@@ -22,7 +22,8 @@ header{
 }
 
 .logo{
-   
+   width: 50px;
+   height: 50px;
 }
 
 .navbar a{
@@ -39,22 +40,25 @@ header{
 }
 
 .menu{
-    margin-top: 10%;
-    padding-left: 5%;
+    margin-top: 12%;
+    padding-left: 4.5%;
+    clear: both;
 }
 
 .menu a{
-    margin-top: 50px;
+    margin-top: 2%;
     display: block;
     width: 2%;
 }
 
 .menu img{
     height: 50px;
+    width: 50px;
 }
 
 .menu img:hover{
     height: 60px;
+    width: 60px;
 }
 
 .intro{
@@ -63,6 +67,8 @@ header{
     margin-left: 13%;
     margin-right: 22%;
     padding: 1.5% 3%;
+    clear: both;
+    margin-top: 20px;
 }
 
 .intro h1{
@@ -70,14 +76,20 @@ header{
 }
 
 .intro h3{
-    font-size: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    margin-top: 3px;
 }
 
 .intro p{
-    font-size: 20px;
-    font-weight: 10;
+    font-size: 15px;
 }
 
 .myname{
     color: #00abf0;
+}
+.myphoto{
+    display: flex;
+    clear: both;
 }
