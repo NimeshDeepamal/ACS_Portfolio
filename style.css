@@ -6,7 +6,7 @@
 }
 
 body{
-    background-color: #000000;
+    background-image: url(backgroundimage.png);
     color: #ffffff;
 }
 
@@ -15,40 +15,50 @@ header{
     top: 0;
     left: 0;
     width: 100%;
-    padding: 60px 5%;
+    padding: 60px 4%;
     display: flex;
     justify-content: space-between;
     align-items: center; 
 }
 
 .logo{
-   width: 50px;
-   height: 50px;
+   width: 70px;
+   height: 70px;
 }
 
 .navbar a{
-    font-size: 25px;
+    font-size: 20px;
     text-decoration: none;
     font-weight: 700;
-    margin-left: 70px;
-    color: #ffffff;
+    margin-left: 60px;
+    color: #66FCF1;
 }
 
-.navbar a:hover ,
-.navbar a.active{
-    color: #00abf0;
+.navbar a:hover {
+    color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu , .bio {
+    flex: 1; 
+    text-align: center;
+    margin-right:12%;
 }
 
 .menu{
-    margin-top: 12%;
+    margin-top: 9%;
     padding-left: 4.5%;
-    clear: both;
+    width: 1%;
 }
 
 .menu a{
-    margin-top: 2%;
     display: block;
     width: 2%;
+    margin-top: 40px;
 }
 
 .menu img{
@@ -57,39 +67,44 @@ header{
 }
 
 .menu img:hover{
-    height: 60px;
-    width: 60px;
+    height: 70px;
+    width: 70px;
 }
 
-.intro{
-    background-color: #121C2E;
-    border-radius: 10px;
-    margin-left: 13%;
-    margin-right: 22%;
-    padding: 1.5% 3%;
-    clear: both;
-    margin-top: 20px;
+.bio{
+    margin-top: 16%;
+    width: 90%;
+    height: 60%;
 }
 
-.intro h1{
-    font-size: 45px;
+.bio h1{
+    font-size: 90px;
+    color: #66FCF1;
 }
 
-.intro h3{
-    font-size: 20px;
+.bio h3{
+    font-size: 40px;
     font-weight: 600;
-    margin-bottom: 15px;
-    margin-top: 3px;
+    margin-bottom: 10px;
+    margin-top: 15px;
 }
 
-.intro p{
-    font-size: 15px;
+.bio p{
+    font-size: 25px;
+    font-weight: 400;
 }
 
-.myname{
-    color: #00abf0;
-}
-.myphoto{
-    display: flex;
-    clear: both;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
