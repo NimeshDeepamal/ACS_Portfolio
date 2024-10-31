@@ -122,47 +122,57 @@ footer p{
 
 /*Blog and Project Page*/
 
-.blogsection1, .blogsection2, .blogsection3{
+/* Blog Container */
+.blog-container {
     display: flex;
-    justify-content: space-between;
-    text-align:left;
-    margin-top: 3%;
-    margin-left: 5%;
-    margin-right: 5%; 
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
 }
-.headding{
-    margin-left: 44%;
-    font-size: 50px;
-}
-.mainimg{
-    width: 100%;
 
+/* Blog Post Styles */
+.blog-post {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    height: 400px;
+}
+.blog-post:hover {
+    transform: scale(1.02);
+}
+/* Blog Post Content */
+.mainimg {
+    width: 100%;
+    height: auto;
+}
+.blog-content {
+    padding: 10px;
+    font-size: 0.9em;
+}
+.full-content {
+    display: none;   /* Hide extra content initially */
+}
+.full-content.visible {
+    display: inline;
+}
+.codeimg{
+    width: 100%;
+    margin-top: 10px;
     margin-bottom: 10px;
 }
-.blogsection1 div{
-    width: 30%;
-    background-color: #45A29E;
-    padding: 10px;
+.show-more {
+    color: blue;
+    cursor: pointer;
 }
-
-.blogsection2 div{
-    width: 30%;
-    background-color: #45A29E;
-    padding: 10px;
-}
-.blogsection3 div{
-    width: 30%;
-    background-color: #45A29E;
-    padding: 10px;
-}
-.codeimg1{
-    width: 70px;
-    margin: 5px 0;
-}
-.codeimg2{
-    width: 30px;
-}
-
 
 
 
