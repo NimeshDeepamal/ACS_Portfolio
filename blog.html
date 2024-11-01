@@ -8,118 +8,149 @@
 </head>
 <body>
     <header>
-        <a href="./w2051751_index.html"><img src="./logo.png" alt="Logo" class="logo"></a>
-        <nav class="navbar">
-            <a href="./w2051751_index.html" class="active">HOME</a>
-            <a href="./blog.html">BLOG AND PROJECT</a>
-            <a href="./about.html">ABOUT</a>
-            <a href="./contact.html">CONTACT</a>
-        </nav>
-    </header>
-
-    <div class="blog">
-        <h1>BLOG</h1>
-        <div class="blog1">
-            <img src="./blog1" alt="Blog 1">
-            <h3 class="blogtitle">Platform App Development – Build for Both iOS and Android</h3>
-            <p class="blogcontent">Cross-platform app development allows developers to create a single codebase that works on both iOS and Android. Popular frameworks like Flutter and React Native enable near-native performance, reducing the time and resources required to launch on multiple platforms.
-            Why Choose Cross-Platform? This approach saves costs and speeds up development, as only one team is needed to maintain the app. It also ensures a consistent user experience across devices, making it easier to reach a wider audience.</p>
-            <time datetime="2024-4-10">April 30,2024</time>
+        <div class="header-content">
+            <a href="./index.html"><img src="./Img/logo.png" alt="Logo" class="logo"></a>
+            <nav class="navbar" id="navbar">
+                <a href="./index.html">HOME</a>
+                <a href="./blog.html" class="active">BLOG AND PROJECT</a>
+                <a href="./about.html">ABOUT</a>
+                <a href="./contact.html">CONTACT</a>
+            </nav>
+            <button class="menu-toggle" id="menu-toggle">☰</button>
         </div>
-        <div class="blog2">
-            <img src="./blog2" alt="Blog 2">
-            <h3 class="blogtitle">Importance of Semantic HTML5 Elements in Web Development</h3>
-            <p class="blogcontent">
-                Semantic HTML5 elements, like &lt;header&gt;, &lt;main&gt;, and &lt;footer&gt;, are crucial because they provide meaning to the structure of web content. These elements improve accessibility, making it easier for assistive technologies to interpret the page. They also help search engines understand the content hierarchy, which can enhance SEO. <br>
-
-                <b>Examples of Semantic Elements:</b> <br>
-                
-                1.&lt;header&gt; - Used for introductory content, like a logo or navigation links. <br>
-                2.&lt;main&gt; - Encloses the main content, helping search engines focus on the page’s core material. <br>
-                3.&lt;footer&gt; - Contains closing information, like contact details or copyright notices. <br>
-                4.Using semantic elements leads to organized code that enhances both user experience and search engine readability.</p>
+    </header>
+<section>
+    <h1 class="headding">BLOG</h1>
+    <div class="blog-container">
+        <!-- Blog Post 1 -->    
+        <div class="blog-post" > 
+            <img src="./blog1.jpg" alt="Blog 1" class="mainimg" >
+            <h3>Platform App Development – Build for Both iOS and Android</h3> 
+            <p class="blog-content"> <br>Cross-platform app development allows developers to create a single codebase that works on both iOS and Android. Popular frameworks like Flutter and React Native enable near-native performance, reducing the time and resources required to launch on multiple platforms. <br> <br>
+                <button class="show-more" onclick="toggleContent(this)">See More</button>
+                <span class="full-content">
+                    Popular frameworks like Flutter and React Native enable near-native performance, reducing time and resources. 
+                    <br><br>
+                    <b>Why Choose Cross-Platform?</b> This approach saves costs and ensures consistent user experience across devices. 
+                </span>
+            </p>
+            <time datetime="2024-04-30">April 30, 2024</time>    
+        </div>
+        <!-- Blog Post 2 -->
+        <div class="blog-post" onclick="toggleContent(this)">
+            <img src="./blog2.webp" alt="Blog 2" class="mainimg">
+            <h3>Importance of Semantic HTML5 Elements in Web Development</h3>
+            <p class="blog-content">
+                <br> Semantic HTML5 elements, like &lt;header&gt;, &lt;main&gt;, and &lt;footer&gt;, are crucial because they provide meaning to the structure of web content. These elements improve accessibility, making it easier for assistive technologies to interpret the page. They also help search engines understand the content hierarchy, which can enhance SEO. <br> <br>
+                <span class="full-content">
+                    <b>Examples of Semantic Elements:</b> <br> <br>
+                    
+                    <b>1.&lt;header&gt;</b> - Used for introductory content, like a logo or navigation links. <br>
+                    <b>2.&lt;main&gt;</b> - Encloses the main content, helping search engines focus on the page’s core material. <br>
+                    <b>3.&lt;footer&gt;</b> - Contains closing information, like contact details or copyright notices. <br> <br>
+                    Using semantic elements leads to organized code that enhances both user experience and search engine readability.
+                </span>
+            </p>
             <time datetime="2024-5-3">May 3,2024</time>
         </div>
-        <div class="blog3">
-            <img src="./blog3" alt="Blog 3">
-            <h4 class="blogtitle">Building an HTML5 Structure with Semantic Elements</h4>
-            <p class="blogcontent">
-                A clear structure using semantic HTML5 tags not only organizes content but also improves SEO. Here’s a simple structure with &lt;header&gt;, &lt;main&gt;, and &lt;footer&gt; tags: <br>
-                <img src="./code1.png" alt=""> <br>
+        <!-- Blog Post 3 -->
+        <div class="blog-post" onclick="toggleContent(this)">
+            <img src="./blog3.png" alt="Blog 3" class="mainimg">
+            <h3>Building an HTML5 Structure with Semantic Elements</h3> 
+            <p class="blog-content">
+                A clear structure using semantic HTML5 tags not only organizes content but also improves SEO. Here’s a simple structure with &lt;header&gt;, &lt;main&gt;, and &lt;footer&gt; tags: <br> 
+                <img src="./code1.png" alt="Code" class="codeimg"> <br> 
                 This setup creates a user-friendly, accessible page, with &lt;header&gt; for the logo/navigation, &lt;main&gt; for content, and &lt;footer&gt; for closing details.
             </p>
             <time datetime="2024-5-12">May 12,2024</time>
         </div>
-        <div class="blog4">
-            <img src="./blog4" alt="Blog 4">
-            <h4 class="blogtitle">Key Features for a Great User Experience in Mobile Apps</h4>
+    </div>
+    
+    <div class="blog-container">
+        <!-- Blog Post 4 -->
+        <div class="blog-post" onclick="toggleContent(this)">
+            <img src="./blog4.jpg" alt="Blog 4" class="mainimg">
+            <h3 class="blogtitle">Key Features for a Great User Experience in Mobile Apps</h3> 
             <p class="blogcontent">
-                A great mobile app needs to provide value with a seamless user experience. Here are three features to prioritize: <br>
-        
-                1.<b>Navigation: Clear and easy navigation helps users find what they need quickly.</b><br>
-                2.<b>Offline Mode: Essential data available offline ensures users can access key features without internet connectivity.</b><br>
-                3.<b>Push Notifications: Timely notifications help re-engage users and keep them updated on new features, promotions, or content.</b><br>
-                4.<b>Balancing functionality with simplicity enhances user satisfaction, driving engagement and retention. <br>
-            </p>
+                A great mobile app needs to provide value with a seamless user experience. Here are three features to prioritize: <br> <br>
+                <span class="full-content">
+                    1.<b>Navigation:</b> Clear and easy navigation helps users find what they need quickly.<br>
+                    2.<b>Offline Mode:</b> Essential data available offline ensures users can access key features without internet connectivity.<br>
+                    3.<b>Push Notifications:</b> Timely notifications help re-engage users and keep them updated on new features, promotions, or content.<br> <br>
+                    Balancing functionality with simplicity enhances user satisfaction, driving engagement and retention.
+                </span> 
+            </p> 
             <time datetime="2024-5-27">May 27,2024</time>
         </div>
-        <div class="blog5">
-            <img src="./blog5" alt="Blog 5">
-            <h4 class="blogtitle">Responsive Design – Essential for Modern Web Development</h4>
+        <!-- Blog Post 5 -->
+        <div class="blog-post" onclick="toggleContent(this)">
+            <img src="./blog5.png" alt="Blog 5" class="mainimg">
+            <h3 class="blogtitle">Responsive Design – Essential for Modern Web Development</h3> 
             <p class="blogcontent">
-                Responsive design ensures websites look good on all devices, from desktops to smartphones. With the variety of screen sizes today, responsiveness is essential to keep users engaged, regardless of the device they use. <br>
+                Responsive design ensures websites look good on all devices, from desktops to smartphones. With the variety of screen sizes today, responsiveness is essential to keep users engaged, regardless of the device they use. <br> <br>
+                <span class="full-content">
+                    <b>Key Elements in Responsive Design:</b> <br> <br>
 
-                <b>Key Elements in Responsive Design:</b> <br>
-
-                <b>1.Viewport Meta Tag:</b> This tag, &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;, is essential for ensuring the site adapts to the screen width. <br>
-                <b>2.Flexible Grids:</b> Using percentages instead of fixed widths allows elements to resize based on the screen size. <br>
-                <b>3.Media Queries:</b> Media queries in CSS let you define styles based on device characteristics, like screen width. <br>
-
-                Example: <br>
-                <img src="./code2.png" alt=""> 
+                    <b>1.Viewport Meta Tag:</b> This tag, &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;, is essential for ensuring the site adapts to the screen width. <br>
+                    <b>2.Flexible Grids:</b> Using percentages instead of fixed widths allows elements to resize based on the screen size. <br>
+                    <b>3.Media Queries:</b> Media queries in CSS let you define styles based on device characteristics, like screen width. <br>
+                    <br>
+                    Example: <br>
+                    <img src="./code2.png" alt="Code" class="codeimg">
+                </span> 
             </p>
             <time datetime="2024-6-7">June 27,2024</time>
         </div>
-        <div class="blog6">
-            <img src="./blog6" alt="Blog 6">
-            <h4 class="blogtitle">Understanding &lt;article&gt; vs. &lt;aside&gt; in HTML5</h4>
+        <!-- Blog Post 6 -->
+        <div class="blog-post" onclick="toggleContent(this)">
+            <img src="./blog6.jpg" alt="Blog 6" class="mainimg">
+            <h3 class="blogtitle">Understanding &lt;article&gt; vs. &lt;aside&gt; in HTML5</h3>
             <p class="blogcontent">
                 The &lt;article&gt; and &lt;aside&gt; elements serve different purposes in HTML5: <br>
-
+                <span class="full-content">
                     <b>&lt;article&gt;:</b> For independent content like blog posts or news items. &lt;article&gt; elements are self-contained, meaning they can be shared or reused independently. <br>
                     <b>&lt;aside&gt;:</b> For additional information that complements the main content, such as sidebars, quotes, or advertisements. <br>
                     <b></b>When to Use:</b> Use &lt;article&gt; for key posts or sections that could stand alone, while &lt;aside&gt; is ideal for extra content, like related links or ads, that enhances the main narrative. <br>
+                </span>
             </p>
             <time datetime="2024-6-20">June 20,2024</time>
         </div>
-        <div class="blog7">
-            <img src="./blog7" alt="Blog 7">
-            <h4 class="blogtitle">Understanding APIs in Mobile Development</h4>
+    </div>
+    
+    <div class="blog-container">
+        <!-- Blog Post 7 -->
+        <div class="blog-post" onclick="toggleContent(this)">
+            <img src="./blog7.png" alt="Blog 7" class="mainimg">
+            <h3 class="blogtitle">Understanding APIs in Mobile Development</h3>
             <p class="blogcontent">
                 APIs (Application Programming Interfaces) are crucial in mobile development, allowing apps to communicate with external services and systems, such as cloud databases, maps, or social platforms. <br>
-
+                <br>
                 <b>Benefits of APIs:</b> They speed up development by enabling integration with external resources, reduce app size by outsourcing complex functions, and improve user experience with real-time data updates. By leveraging APIs, developers can extend app functionality without creating everything from scratch.
             </p>
             <time datetime="2024-7-9">July 9,2024</time>
         </div>
-        <div class="blog2">
-            <img src="./blog8" alt="Blog 2">
-            <h4 class="blogtitle">Why HTML5 is Vital in Web Development</h4>
+        <!-- Blog Post 8 -->
+        <div class="blog-post" onclick="toggleContent(this)">
+            <img src="./blog8.png" alt="Blog 8" class="mainimg">
+            <h3 class="blogtitle">Why HTML5 is Vital in Web Development</h3>
             <p class="blogcontent">
                 HTML5 is widely used in modern web design due to its numerous benefits, including enhanced multimedia support and semantic tags. <br>
+                <br>
+                <span class="full-content">
+                    Key Benefits: <br> <br>
 
-                Key Benefits: <br>
-
-                <b>1.Improved Media Integration:</b> HTML5’s &lt;video&gt; and &lt;audio&gt; elements make it easy to add media without plugins. <br>
-                <b>2.SEO and Accessibility:</b> Semantic tags improve accessibility for screen readers and help search engines understand page structure. <br>
-                <b>3.Cross-Browser Consistency:</b> HTML5 helps reduce browser compatibility issues, providing a uniform user experience. <br>
-                Using HTML5 leads to well-structured, SEO-friendly websites that are accessible, functional, and consistent across browsers.
+                    <b>1.Improved Media Integration:</b> HTML5’s &lt;video&gt; and &lt;audio&gt; elements make it easy to add media without plugins. <br>
+                    <b>2.SEO and Accessibility:</b> Semantic tags improve accessibility for screen readers and help search engines understand page structure. <br>
+                    <b>3.Cross-Browser Consistency:</b> HTML5 helps reduce browser compatibility issues, providing a uniform user experience. <br>
+                    <br> Using HTML5 leads to well-structured, SEO-friendly websites that are accessible, functional, and consistent across browsers.
+                </span>
             </p>
-            <time datetime="2024-7-17">July 17,2024</time>
+            <time datetime="2024-7-17" class="mainimg">July 17,2024</time>
         </div>
-        <div class="blog3">
-            <img src="./blog9" alt="Blog 3">
-            <h4 class="blogtitle">Why an MVP (Minimum Viable Product) is Key in App Development</h4>
+        <!-- Blog Post 9 -->
+        <div class="blog-post" onclick="toggleContent(this)">
+            <img src="./blog9.jpg" alt="Blog 9" class="mainimg">
+            <h3 class="blogtitle">Why an MVP (Minimum Viable Product) is Key in App Development</h3>
             <p class="blogcontent">
                 A Minimum Viable Product (MVP) is a streamlined version of an app that includes only essential features. Launching an MVP lets you test core functionality, gather user feedback, and validate the app idea before committing to a full launch.
                 <br><br>
@@ -128,11 +159,14 @@
             <time datetime="2024-8-15">August 15,2024</time>
         </div>
     </div>
+</section>
 
+    <!-- Footer Section -->
     <footer>
         <p><Address>No.42,Kajjuwatta,Hittatiya Central,Matara,Sri Lanka.</Address></p>
         <p>&copy; 2024 Nimesh Deepamal. All rights reserved.</p>
     </footer>
+
     
 </body>
 </html>
