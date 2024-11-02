@@ -203,13 +203,21 @@
                 <time datetime="2024-5-12">May 12, 2024</time>
             </div>
         </div>
-
-    <!-- Footer Section -->
+    </main>
     <footer>
-        <p><Address>No.42,Kajjuwatta,Hittatiya Central,Matara,Sri Lanka.</Address></p>
         <p>&copy; 2024 Nimesh Deepamal. All rights reserved.</p>
     </footer>
 
-    
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const menuToggle = document.getElementById('menu-toggle');
+            const navbar = document.getElementById('navbar');
+
+            menuToggle.addEventListener('click', () => {
+                navbar.classList.toggle('active');
+            });
+        });
+    </script>
+
 </body>
 </html>
