@@ -404,6 +404,72 @@ time {
 
 
 
+/*-----------------------About me Page--------------------------*/
+
+.about-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    align-items: start;
+}
+.photo-container {
+    background-color: #000000;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+}
+.photo-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.about-content {
+    background-color: #1a1a1a;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    font-size: 2.5rem;
+    color: #64ffda;
+    margin-bottom: 1rem;
+}
+.about-h2 {
+    font-size: 1.5rem;
+    color: #64ffda;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+.about-p {
+    margin-bottom: 1rem;
+}
+ul {
+    list-style-type: none;
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+}
+li::before {
+    content: "•";
+    color: #64ffda;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .about-container {
+        grid-template-columns: 1fr;
+    }
+    .photo-container {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+}
+
+
+
 
 
 
